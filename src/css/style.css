@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body{
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    height: 100vh;
+}
+
+.cabecalho .logo{
+    margin: 50px;
+    height: 50px;
+}
+
+.container{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 70%;
+}
+
+.container .imagem img{
+    width: 50vw;
+}
+
+.container .sobre {
+    padding: 50px;
+    color: white;
+}
+
+.container .sobre .titulo{
+    margin-bottom: 30px;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.container .sobre .descricao{
+    margin-bottom: 20px;
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container .sobre .botao{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 20px;
+    width: 200px;
+    color: blueviolet;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container .sobre .botao:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    border: none;
+}
+
+.sociais ul{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.sociais ul li a{
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sociais ul li a:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 375px) {
+    .cabecalho .logo{
+        margin: 30px;
+        height: 20px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        margin: 100px;
+        gap: 20px;
+    }
+
+    .container .imagem img{
+        width: 200px;
+    }
+
+    .container .sobre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .sobre .titulo{
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+    .container .sobre .descricao{
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    
+    .container .sobre .botao{
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .sociais ul{
+        display: flex;
+        gap: 20px;
+        
+    }
+    
+    .sociais ul li a{
+        font-size: 15px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
